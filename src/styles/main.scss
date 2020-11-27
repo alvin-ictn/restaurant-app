@@ -1,67 +1,12 @@
+@import './color.scss';
+@import './container.scss';
+@import './font.scss';
+@import './utilities.scss';
+
 * {
     margin: 0;
     padding: 0;
-    }
-
-img {
-    display: block;
-}
-
-.flex {
-    display:flex;
-}
-
-.f1 {
-    flex-grow: 1;
-}
-
-.row {
-    flex-direction: row;
-}
-
-.col {
-    flex-direction: column;
-}
-
-.f-between {
-    justify-content: space-between;
-}
-
-.f-around {
-    justify-content: space-around;
-}
-
-.f-even {
-    justify-content: space-evenly;
-}
-
-.center-h {
-    justify-content: center;
-}
-
-.center-v {
-    align-items: center;
-}
-
-
-.carousel img {
-    width:100%;
-}
-
-nav.navbar {
-    background-color: salmon;
-    padding:0 50px;
-}
-
-.container {
-    width:40%;
-}
-
-.menu-list {
-    list-style: none;
-}
-
-ul li {
-    /* padding: 0 30px; */
-    line-height: 70px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }

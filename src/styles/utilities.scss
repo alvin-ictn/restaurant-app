@@ -1,0 +1,29 @@
+$display:(
+ block,
+ flex,
+ inline-block,
+ unset,
+ grid,
+ inline
+);
+
+$position:(
+  absolute,
+  relative,
+  fixed,
+  static,
+  sticky
+);
+
+@each $name in $display { 
+  .d-#{$name} {
+    display: $name;
+  }
+}
+
+@each $name in $position { 
+  .pos-#{$name} {
+    position: $name;
+  }
+}
+

@@ -1,0 +1,26 @@
+$width:("w": "%",
+  "vw": "vw",
+);
+
+$height:(
+  "h": "%",
+  "vh": "vh",
+);
+
+@each $name,
+$unit in $width {
+  @for $i from 1 through 100 {
+    .#{$name}-#{$i} {
+      width:#{$i}#{$unit} !important;
+    }
+  }
+}
+
+@each $name,
+$unit in $height {
+  @for $i from 1 through 100 {
+    .#{$name}-#{$i} {
+      height:#{$i}#{$unit} !important;
+    }
+  }
+}
