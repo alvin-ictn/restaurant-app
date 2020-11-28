@@ -63,13 +63,20 @@ $flex-direction:(
 }
 
 $justify-content:(
-  flex-start,flex-end,center,space-between,space-around,space-evenly,stretch
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  between: space-between,
+  around: space-around,
+  evenly: space-evenly,
+  stretch: stretch
 );
 
-@each $name in $justify-content { 
+@each $name,$item in $justify-content { 
   .justify-content-#{$name} {
-    justify-content: $name;
+    justify-content: $item;
   }
+
 }
 
 $align-items:(
