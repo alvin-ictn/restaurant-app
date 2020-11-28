@@ -7,6 +7,12 @@ $display:(
  inline
 );
 
+@each $name in $display { 
+  .d-#{$name} {
+    display: $name;
+  }
+}
+
 $position:(
   absolute,
   relative,
@@ -15,15 +21,41 @@ $position:(
   sticky
 );
 
-@each $name in $display { 
-  .d-#{$name} {
-    display: $name;
-  }
-}
-
 @each $name in $position { 
   .pos-#{$name} {
     position: $name;
   }
 }
 
+$flex-direction:(
+  row,
+  row-reverse,
+  column,
+  column-reverse
+);
+
+@each $name in $flex-direction { 
+  .flex-#{$name} {
+    flex-direction: $name;
+  }
+}
+
+$justify-content:(
+  flex-start,flex-end,center,space-between,space-around,space-evenly
+);
+
+@each $name in $justify-content { 
+  .justify-content-#{$name} {
+    justify-content: $name;
+  }
+}
+
+$align-items:(
+  flex-start,flex-end,center,baseline,stretch
+);
+
+@each $name in $align-items { 
+  .flex-#{$name} {
+    flex-direction: $name;
+  }
+}
