@@ -76,7 +76,9 @@ $justify-content:(
   .justify-content-#{$name} {
     justify-content: $item;
   }
-
+  .align-items-#{$name} {
+    align-items: $item;
+  }
 }
 
 $align-items:(
