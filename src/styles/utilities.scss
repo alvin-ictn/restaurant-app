@@ -62,6 +62,9 @@ $flex-direction:(
   }
 }
 
+$justify-content:(
+  flex-start,flex-end,center,space-between,space-around,space-evenly,stretch
+);
 
 @each $name in $justify-content { 
   .justify-content-#{$name} {
