@@ -57,11 +57,13 @@ $unit in $height {
     }
 
     .mx-#{$i}#{$name}{
-      margin: 0 #{$i}#{$name};
+      margin-left: #{$i}#{$name};
+      margin-right: #{$i}#{$name};
     }
 
     .my-#{$i}#{$name}{
-      margin: #{$i}#{$name} 0;
+      margin-top: #{$i}#{$name};
+      margin-bottom: #{$i}#{$name};
     }
 
     .p-#{$i}#{$name}{
@@ -85,11 +87,13 @@ $unit in $height {
     }
 
     .px-#{$i}#{$name}{
-      padding: 0 #{$i}#{$name};
+      padding-left: #{$i}#{$name};
+      padding-right: #{$i}#{$name};
     }
     
     .py-#{$i}#{$name}{
-      padding: #{$i}#{$name} 0;
+      padding-top: #{$i}#{$name};
+      padding-bottom: #{$i}#{$name};
     }
   }
 }
