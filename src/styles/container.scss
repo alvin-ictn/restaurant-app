@@ -7,6 +7,16 @@ $height:(
   "vh": "vh",
 );
 
+$units:(
+  "px",
+  "rem",
+  "em",
+  "px",
+  "%",
+  "vh",
+  "vw"
+);
+
 @each $name,
 $unit in $width {
   @for $i from 1 through 100 {
@@ -21,6 +31,66 @@ $unit in $height {
   @for $i from 1 through 100 {
     .#{$name}-#{$i} {
       height:#{$i}#{$unit} !important;
+    }
+  }
+}
+
+@each $name in $units {
+  @for $i from 1 through 100 {
+    .m-#{$i}#{$name}{
+      margin: #{$i}#{$name};
+    }
+
+    .mt-#{$i}#{$name}{
+      margin-top: #{$i}#{$name};
+    }
+
+    .mb-#{$i}#{$name}{
+      margin-bottom: #{$i}#{$name};
+    }
+
+    .mr-#{$i}#{$name}{
+      margin-right: #{$i}#{$name};
+    }
+
+    .ml-#{$i}#{$name}{
+      margin-left: #{$i}#{$name};
+    }
+
+    .mx-#{$i}#{$name}{
+      margin: unset #{$i}#{$name};
+    }
+
+    .my-#{$i}#{$name}{
+      margin: #{$i}#{$name} unset;
+    }
+
+    .p-#{$i}#{$name}{
+      padding: #{$i}#{$name};
+    }
+
+    .pt-#{$i}#{$name}{
+      padding-top: #{$i}#{$name};
+    }
+
+    .pb-#{$i}#{$name}{
+      padding-bottom: #{$i}#{$name};
+    }
+
+    .pr-#{$i}#{$name}{
+      padding-right: #{$i}#{$name};
+    }
+
+    .pl-#{$i}#{$name}{
+      padding-left: #{$i}#{$name};
+    }
+
+    .px-#{$i}#{$name}{
+      padding: unset #{$i}#{$name};
+    }
+    
+    .py-#{$i}#{$name}{
+      padding: #{$i}#{$name} unset;
     }
   }
 }
