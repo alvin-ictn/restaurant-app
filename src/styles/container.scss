@@ -12,7 +12,6 @@ $units:(
   "rem",
   "em",
   "px",
-  "%",
   "vh",
   "vw"
 );
@@ -58,11 +57,11 @@ $unit in $height {
     }
 
     .mx-#{$i}#{$name}{
-      margin: unset #{$i}#{$name};
+      margin: 0 #{$i}#{$name};
     }
 
     .my-#{$i}#{$name}{
-      margin: #{$i}#{$name} unset;
+      margin: #{$i}#{$name} 0;
     }
 
     .p-#{$i}#{$name}{
@@ -86,11 +85,11 @@ $unit in $height {
     }
 
     .px-#{$i}#{$name}{
-      padding: unset #{$i}#{$name};
+      padding: 0 #{$i}#{$name};
     }
     
     .py-#{$i}#{$name}{
-      padding: #{$i}#{$name} unset;
+      padding: #{$i}#{$name} 0;
     }
   }
 }
