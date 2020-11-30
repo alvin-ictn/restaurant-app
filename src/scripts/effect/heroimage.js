@@ -1,7 +1,7 @@
 let i = 1;
 let images = ['./images/heros/hero-image_1.jpg', './images/heros/hero-image_2.jpg', './images/heros/hero-image_3.jpg', './images/heros/hero-image_4.jpg'];
 
-let imgDiv = document.querySelectorAll('img');
+let imgDiv = document.querySelectorAll('#carousel');
 
 imgDiv[0].src = images[0];
 
