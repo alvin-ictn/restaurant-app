@@ -18,9 +18,9 @@ nav {
         position:relative;
         border-radius: 5px;
         width: 40px;
-        @for $i from 1 through 3 {
-          &:nth-child(#{$i+1}){
-            top: #{3*$i}#{"px"};
+        @for $i from 1 through 4 {
+          &:nth-child(#{$i}){
+            top: #{-7.5+3*$i}#{"px"};
           }
         }
       }
