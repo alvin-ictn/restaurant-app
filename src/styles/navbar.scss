@@ -10,14 +10,27 @@ nav {
       list-style-type: none;
       display:none;
     }
-
     .navbar-menu-collapse{
       cursor:pointer;
       .menu-collapse__item{
         border: 2px solid black;
         height: 2px;
-        margin-bottom: 5px;
-        width: 60px;
+        position:relative;
+        width: 40px;
+        &.combine {
+          &:first-child { 
+            top: 0px;          
+          }
+          &:nth-child(2) {
+            top: 0px;
+          }
+          &:nth-child(3) {
+            top: 0px;          
+          }
+          &:last-child {
+            top: 0px;
+          }
+        }
       }
     }
   }
